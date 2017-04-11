@@ -17,6 +17,6 @@ RUN cd $SRC_PATH && make install
 RUN mv `which mtail` /usr/local/bin/mtail
 RUN rm -fr $GOPATH
 
-EXPOSE 3187
+EXPOSE 3093
 
-ENTRYPOINT ["/usr/local/bin/mtail", "-v=2", "-logtostderr", "-port", "3187"] 
+ENTRYPOINT ["/usr/local/bin/mtail", "-v=2", "-logtostderr", "-port", "3093"] 
